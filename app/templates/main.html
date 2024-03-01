@@ -10,15 +10,24 @@
 </head>
 <body>
 <nav class="navbar bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="#">
+            <img src="/static/images/favicon.png" alt="Logo" width="30" height="24"
+                 class="d-inline-block align-text-top">
             Mountain Matrix
         </a>
+
+        <input type="search" class="form-control" placeholder="Search" style="max-width: 200px; margin: 0 auto;">
     </div>
 </nav>
 
 <!--Format https://caltopo.com/map.html#ll={lat},{long}&z=15&b=mbt-->
-<iframe width="100%" height="600px" src="https://caltopo.com/map.html#ll=34.288892700000076,-117.64672179999997&z=15&b=mbt"></iframe>
+<iframe width="100%" height="600px"
+        src="https://caltopo.com/map.html#ll=34.288892700000076,-117.64672179999997&z=15&b=mbt"></iframe>
+
+<footer class="fixed-bottom bg-dark" data-bs-theme="dark">
+    <p class="text-center text-body-secondary pt-3">© 2024 MountainMatrix</p>
+</footer>
 
 <script src="/static/js/bootstrap.bundle.min.js"></script>
 </body>
